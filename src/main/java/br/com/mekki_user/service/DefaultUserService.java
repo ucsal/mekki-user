@@ -88,6 +88,7 @@ public class DefaultUserService implements UserService {
 
     private UserResponseTO getUserResponseTO(User user) {
         UserResponseTO userResponseDTO = new UserResponseTO();
+        userResponseDTO.setId(user.getId());
         userResponseDTO.setUsername(user.getUsername());
         userResponseDTO.setEmail(user.getEmail());
         userResponseDTO.setSchool(user.getSchool());
